@@ -26,8 +26,8 @@ const Posts = () => {
         </div>
         <h3>{resourceType}</h3>
         {/* gautu duomenu is api spausdinimas */}
-        {items.map(item => {
-            return <pre>{JSON.stringify(item)}</pre>
+        {items.map((item, index) => {
+            return <pre key={index}>{JSON.stringify(item)}</pre>
         })}
         </div>
     )
