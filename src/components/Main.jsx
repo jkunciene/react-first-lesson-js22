@@ -1,16 +1,17 @@
-import Contacts from "./Contacts";
-import Counter from "./Counter";
-import Posts from "./Posts";
+import ProductsList from "./productslist/ProductsList";
+//1-ka importuoju -> react KOMPONENTA 
+//2-from -> is kur importuoju katalogas failas
+// <-  nerasyti ranka, o parinkti is to meta 
+// ./ ieskau tame paciame kataloge
+// ../ pakylu vienu leveliu auksciau - vienu katalogu aukstyn
+// ../../ pakylu dviem katalogais aukstyn
+
+
 
 const Main = () => {
   return (
     <div>
-        <Counter/>
-        <Posts/>
-        <Contacts 
-            name={"Jolita"}
-            email={"jolita@gmail.com"}
-            age={18}/>
+        <ProductsList/>
     </div>
   )
 }
