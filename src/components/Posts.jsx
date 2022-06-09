@@ -22,7 +22,7 @@ const Posts = () => {
         <div>
             <button onClick={() => setResourceType('posts')}>Posts</button>
             <button onClick={() => setResourceType('users')}>Users</button>
-           
+            <button onClick={() => setResourceType('comments')}>Comments</button>
         </div>
         <h3>{resourceType}</h3>
         {/* gautu duomenu is api spausdinimas */}
